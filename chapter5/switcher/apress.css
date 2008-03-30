@@ -1,0 +1,58 @@
+body {
+	font-family: sans-serif;
+	background-color: white;
+	line-height: 1.8em;
+}
+
+h1 {
+	height: 80px;
+	background: black url(images/fractal.jpg) no-repeat top right;
+	color: #ffCC00;
+	padding: 80px 0 0 80px;
+}
+
+h2 {
+	border: 0;
+	background: #900;
+	padding: 0.5em;
+	color: white;
+	width: 40%;
+}
+
+ul	{
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	padding-left: 80px;
+	background: #eee;
+	margin: 0;
+	height: 30px;
+}
+
+ul li {
+	display: inline;
+	padding: 0; margin: 0;
+}
+
+ul li a {
+	text-decoration: none;
+	font-size: 1.3em;
+	line-height: 1.2em;
+	font-weight: bold;
+	color: black;
+	display: block;
+	float: left;
+	padding: 6px 20px;	
+	height: 18px;
+	overflow: hidden;
+}
+
+ul li a:hover {
+	color: white;
+	background-color: #35353e;	
+}
+
+#content {
+	padding-top: 50px;
+	width: 80%;
+}

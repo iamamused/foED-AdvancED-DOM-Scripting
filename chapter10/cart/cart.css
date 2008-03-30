@@ -1,0 +1,56 @@
+/*
+The rest of the layout is located in source
+source/shared/chapter.css
+source/chapter10/chapter.css
+*/
+
+/* cart and product specific styles */
+#products, #cart {
+	list-style: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+#products li, #cart li {
+	display: block;
+	height: 40px;
+	width: 33px;
+	float: left;
+}
+
+#products li img, #cart li img {
+	height: 40px;
+	width: 33px;
+}
+#products li a, #cart li a {
+	
+}
+
+#product-wrapper {
+	background: #efefef;
+	padding: 15px;
+	margin: 1em;
+	width: 430px;
+}
+
+#cart-wrapper {
+	background: #fff9ea;
+	padding: 15px;
+	margin: 1em;
+	width: 430px;
+}
+
+#cart-wrapper.drop-it {
+	background: #eaffea;
+}
+
+#message {
+	font-size:1em;
+	height: 1em;
+}
+
+.product-item *, .cart-item * {
+	display: block;
+	clear: none;
+}

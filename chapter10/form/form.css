@@ -1,0 +1,37 @@
+
+/*
+The rest of the layout is located in source
+source/shared/chapter.css
+source/chapter10/chapter.css
+*/
+
+/* Give the error messages a height to prevent shift */
+span.error {
+    display:block;
+    color:red;
+    height:1em;
+}
+
+/* Position the slider attached to the bottom of the form */
+#slider-wrapper {
+    margin: 0;
+    padding: 0;
+    position:absolute;
+    left: 20px;
+    display:none;
+    width: 436px;
+}
+#slider-wrapper div {
+	margin: 0;
+	padding: 0;
+}
+#slider-wrapper span {
+	padding: 1em;
+	display: block;
+}
+#error-slider {
+	margin: 0;
+    background:red url(images/arrow.png) no-repeat left center;
+    color:white;
+}
+

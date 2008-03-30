@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font: 62.5% "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+img {
+	border: 0;
+}
+
+h1 {
+	padding: 0.25em;
+	margin: 0;
+	background: gray;
+	color: white;
+	margin-bottom: 2em;
+}
+
+div {
+	margin: 2em;
+}

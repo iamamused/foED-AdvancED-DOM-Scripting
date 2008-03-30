@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Moo.fx Customer Information Form</title> 
+    <link rel="stylesheet" href="../../shared/source.css" 
+        type="text/css" media="screen" />
+    <link rel="stylesheet" href="../chapter.css" 
+        type="text/css" media="screen" />
+    <link rel="stylesheet" href="form.css" 
+        type="text/css" media="screen" />
+    <script src="../../ADS-final-verbose.js" 
+        type="text/javascript"></script>
+    <script src="../../libraries/moo.fx-mootools.js" 
+        type="text/javascript"></script>
+    <script src="../../libraries/jquery.js" 
+        type="text/javascript"></script>
+    <script type="text/javascript" src="interactive.js"></script> 
+</head>
+<body>
+<h1>Customer Information</h1> 
+<div id="content">
+    <h2>Moo.fx Effects Example</h2> 
+    <div id="customer-info">
+        <form id="customer-form" action="POST">
+            <fieldset>
+                <legend>
+                    <span class="sign"> Personal Information</span> 
+                </legend>
+                <div class="required">
+                    <label for="name" accesskey="1">Name</label>
+                    <input title="your name" name="name" id="name" 
+                        tabindex="1" type="text"/> 
+                    <span id="name-error" class="error"></span>
+                </div>
+                <div class="required">
+                    <label for="street" accesskey="2">Street</label> 
+                    <input title="your street" name="street" 
+                       id="street" tabindex="2" value="" type="text"/> 
+                    <span id="street-error" class="error"></span>
+                </div>
+                <div class="required">
+                    <label for="city" accesskey="3">City</label> 
+                    <input title="your city" name="city" id="city" 
+                        tabindex="3" value="" type="text"/> 
+                    <span id="city-error" class="error"></span>
+                </div>
+                <div class="required">
+                    <label for="region" accesskey="4">Province</label> 
+                    <input title="your state / province" name="region"
+                       id="region" tabindex="4" value="" type="text"/> 
+                    <span id="region-error" class="error"></span>
+                </div>
+                <div class="required">
+                    <label for="postal">Postal Code</label> 
+                    <input title="zip or postal code" name="postal" 
+                        id="postal" tabindex="5" value="" type="text"/> 
+                    <span id="postal-error" class="error"></span>
+                </div>
+                <div>
+                    <label for="website" accesskey="6">Website</label>
+                    <input title="your website" name="website" 
+                        id="website" tabindex="6" type="text"/>
+                    <span id="website-error" class="error"></span>
+                </div>
+                <div class="required">
+                    <label for="email" accesskey="7">Email 
+                        (for Verification)</label>
+                    <input title="your email" name="email" 
+                        id="email" tabindex="7" type="text"/>
+                    <span id="email-error" class="error"></span>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Save Information" 
+                        tabindex="7"/>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

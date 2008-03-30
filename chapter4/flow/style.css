@@ -1,0 +1,39 @@
+#content {
+	width: 90%;
+}
+ul {
+	padding:10px;
+	margin:0;
+
+	border:1px dotted black;
+	background-color:white;
+	list-style:none;
+}
+p {
+	margin: 0;
+	font-size:1.2em;
+	font-weight: bold;
+}
+
+.clicked {
+	background: #ffcf54;
+}
+
+#list1 {
+	height:80px;
+}
+#list2 {
+	margin-top: 10px;
+	height:20px;
+}
+
+#list3 {
+	position:absolute;
+	top:190px;
+	left:150px;
+}
+
+#list4 {
+	margin-top:10px;
+	height:100px;
+}

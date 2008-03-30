@@ -1,0 +1,82 @@
+/* @override http://advanceddomscripting.com/source/chapter6/browser/browser.css */
+
+body {
+	font: 62.5% "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: center;
+}
+#content {
+	width :700px;
+	margin: 0 auto;
+	text-align: left;
+}
+h1 {
+	padding: 0.25em;
+	margin: 0;
+	margin-bottom: 1em;
+	background: gray;
+	color: white;
+}
+
+ul#pages, ul#list {
+	list-style: none;
+	margin: 1em 0;
+	padding: 0;
+	text-align: center;
+}
+ul#pages li, ul#list li {
+	display: inline;
+	margin: 0 1em;
+}
+ul#list li.noFile {
+	display: none;
+}
+
+ul#pages {
+	border-bottom: 1px dotted gray;
+	padding-bottom: 1.5em;
+}
+ul#pages li {
+	padding: 0.3em;
+	border: 1px solid gray;
+	margin: 0.5em;
+}
+ul#pages a {
+	text-decoration: none;
+	color: gray;
+}
+
+
+#list img {
+	margin: 0;
+	border: 1px solid gray;
+	padding: 6px;
+}
+
+#preview {
+	position: relative;
+}
+#previewPhotoFrame {
+	text-align: center;
+}
+#preview img {
+	margin: 0;
+	border: 1px solid gray;
+	padding: 12px;
+}
+
+#photoInfo {
+	text-align: center;
+}
+
+dt, dd {
+	display: inline;
+	margin: 0;
+}
+dt {
+	font-weight: bold;
+	margin: 0 0.5em;
+	color: gray;
+}
+dd	{
+	margin-right: 1.5em;
+}

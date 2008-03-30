@@ -1,0 +1,1 @@
+alert('Does window === this? ' + (window === this));

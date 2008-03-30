@@ -1,0 +1,95 @@
+
+
+#browserList {
+	border: 2px solid #999;
+	background: #c7e4de;
+	padding: 1em;
+	margin: 1em;
+}
+.drag-element {
+	width: 100px;
+	height: 20px;
+	border: 2px solid #999;
+	background: #ccc;
+	padding: 1em;
+	color: white;
+	margin: 1em;
+}
+
+.ajax-element {
+	height: 4em;
+	border: 2px solid #999;
+	background: #e3fe8d;
+	padding: 1em;
+	color: black;
+	margin: 1em;
+}
+
+.hasOneImage {
+	border: 3px solid red;
+}
+
+.justAdded {
+	margin: 1em;
+	padding: 1em;
+	background: yellow url(images/burst.png) no-repeat -220px center;
+	font-weight: bold;
+	font-size: 2em;
+	border: 2px solid #a5a50a;
+}
+
+#autocomplete-example {
+	position: relative;
+	padding: 1em;
+}
+
+#autocomplete {
+	position: relative;
+	margin-bottom: 1.5em;
+	width: 40%;
+	z-index: 9000;
+}
+
+#autocomplete-input {
+	_position: absolute;
+	width: 100%;
+	height: 1.4em;
+}
+
+#autocomplete-results {
+	position: absolute;
+	top: 1.7em;
+	width: 100%;
+}
+
+#autocomplete-results .yui-ac-content {
+	position: absolute;
+	width: 100%;
+	border: 1px solid #404040;
+	background: #fff;
+	overflow: hidden;
+	z-index: 9050;
+}
+
+#autocomplete-results .yui-ac-shadow {
+	position: absolute;
+	margin: .3em;
+	width: 100%;
+	background: #a0a0a0;
+	z-index: 9049;
+}
+
+#autocomplete-results ul {
+	padding: 5px 0;
+	width: 100%;
+}
+
+#autocomplete-results li {
+	padding: 0 5px;
+	cursor: default;
+	white-space: nowrap;
+}
+
+#autocomplete-results li.yui-ac-highlight {
+	background: #0ff;
+}

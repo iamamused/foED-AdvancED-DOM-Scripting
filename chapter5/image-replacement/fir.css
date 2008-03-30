@@ -1,0 +1,4 @@
+/* Add a background image */#advancedHeader {
+	border: 0; padding: 0; /* remove styleing from other style sheets */
+
+    height:60px;    background: transparent url(http://advancedDOMScripting.com/images/advancED-replace.png) no-repeat;}/* Hide the text */#advancedHeader span {    display:none;}

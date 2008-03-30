@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>MSIE Transparent PNGs - Minty Goodness</title>
+
+    <link rel="stylesheet" type="text/css" href="../../shared/source.css" />
+    <link rel="stylesheet" type="text/css" href="../chapter.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <link rel="stylesheet" type="text/css" href="missing.css" />
+
+    <!-- ADS Library (full version from source linked here) -->
+    <script type="text/javascript" src="../../ADS-final-verbose.js"></script>
+    
+    <!-- a linked stylesheet with a PNG background -->
+	<link rel="stylesheet" href="link.css" type="text/css" media="screen" />
+	<style type="text/css">
+		@import url('import.css');
+		.transImageLocal {
+			width:130px;
+			height:130px;
+			background: transparent url(circle.png); no-repeat center center;
+		}
+	</style>
+
+    <!-- The load script -->
+    <script type="text/javascript" src="fixMSIEPng.js"></script>
+
+</head>
+<body>
+<h1>Internet Explorer 6 Transparent PNGs - Minty Goodness</h1>
+<div id="content">
+	<ul id="images">
+		<li><img src="circle.png" alt="Test"></li>
+		<li><a href="#"><img src="circle.png" alt="Test" border="0"></a></li>
+		<li><span style="background:transparent url(circle.png) no-repeat center center; width:130px; height:130px; display:block;"></span></li>
+		<li><div class="transImageLink"></div></li>
+		<li><div class="transImageImport"></div></li>
+		<li><div class="transImageLocal"></div></li>
+
+		<li><img src="circle.png" alt="Test"></li>
+		<li><a href="#"><img src="circle.png" alt="Test" border="0"></a></li>
+		<li><span style="background:transparent url(circle.png) no-repeat center center; width:130px; height:130px; display:block;"></span></li>
+		<li><div class="transImageLink"></div></li>
+		<li><div class="transImageImport"></div></li>
+		<li><div class="transImageLocal"></div></li>
+	</ul>
+</div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

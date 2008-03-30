@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Image Editor Test Page</title>
+    <!-- inclue some CSS style sheet to make everything look a little nicer -->
+    <link rel="stylesheet" type="text/css" href="../../shared/source.css" />
+    <link rel="stylesheet" type="text/css" href="../chapter.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Your ADS library with the common JavaScript objects -->
+    <script type="text/javascript" src="../../ADS-final-verbose.js"></script>
+    <!-- Log object from Chapter 2 -->
+    <script type="text/javascript" src="../../chapter2/myLogger-final/myLogger.js"></script>
+
+    <!-- The imageEditor object -->
+    <script type="text/javascript" src="imageEditor.js"></script>
+</head>
+<body>
+<h1>Edit Your Images</h1>
+<div id="content">
+<ul>
+    <li>
+        <form action="/path/to/server/script" method="post" 
+            class="ADSImageEditor">
+            <img id="mintImage" src="images/mint.jpg"/>
+            <fieldset>
+                <legend>New Size</legend>
+                <div>
+                    <label>Width</label><input type="text" name="newWidth">
+                </div>
+                <div>
+                    <label>Height</label><input type="text" name="newHeight">
+                    <p>The width and height applies to the 
+                    original uncropped image</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Trim Edges</legend>
+                <div>
+                    <label>Top</label><input type="text" name="cropTop">
+                </div>
+                <div>
+                    <label>Rigt</label><input type="text" name="cropRight">
+                </div>
+                <div>
+                    <label>Bottom</label><input type="text" name="cropBottom">
+                </div>
+                <div>
+                    <label>Left</label><input type="text" name="cropLeft">
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Apply">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </li>
+    <li>
+        <form action="/path/to/server/script" method="post" class="ADSImageEditor">
+            <img id="babyImage" src="images/baby.jpg"/>
+            <fieldset>
+                <legend>New Size</legend>
+                <div>
+                    <label>Width</label><input type="text" name="newWidth">
+                </div>
+                <div>
+                    <label>Height</label><input type="text" name="newHeight">
+                    <p>The width and height applies to the 
+                    original uncropped image</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Trim Edges</legend>
+                <div>
+                    <label>Top</label><input type="text" name="cropTop">
+                </div>
+                <div>
+                    <label>Rigt</label><input type="text" name="cropRight">
+                </div>
+                <div>
+                    <label>Bottom</label><input type="text" name="cropBottom">
+                </div>
+                <div>
+                    <label>Left</label><input type="text" name="cropLeft">
+                </div>
+            </fieldset>
+            <div class="buttons">
+                <input type="submit" value="Apply">
+                <input type="reset" value="Reset">
+            </div>
+        </form> 
+    </li>
+</ul>
+</div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

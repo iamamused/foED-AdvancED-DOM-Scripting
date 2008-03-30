@@ -1,0 +1,42 @@
+input {
+	padding: 0.25em;
+	border: 1px solid #828282;
+}
+#name, #street, #city {
+	width: 180px;
+}
+#postalCode, #province {
+	width: 80px;
+}
+
+label {
+	font-size: 1.3em;
+	margin: 0.25em 0;
+	display: block;
+}
+p {
+	margin: 0 auto auto 0;
+}
+
+.inputEditing {
+	background: #FFF url(images/editing.gif) no-repeat left center;
+	padding-left: 20px;
+	width: 380px;
+}
+
+.inputMissing {
+	background: #FFF url(images/required.gif) no-repeat left center;
+	padding-left: 20px;
+	width: 380px;
+}
+
+.inputInvalid {
+	background: #FFF url(images/invalid.gif) no-repeat left center;
+	padding-left: 20px;
+	width: 380px;
+}
+
+.inputComplete {
+	background: #FFF url(images/complete.gif) no-repeat left center;
+	padding-left: 20px;
+}

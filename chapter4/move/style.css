@@ -1,0 +1,11 @@
+#box {
+	width:80px;
+	height:80px;
+	padding: 10px;
+	background: #f06;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	-moz-border-radius: 10px;
+	-moz-border-radius-bottomleft: 0em
+}

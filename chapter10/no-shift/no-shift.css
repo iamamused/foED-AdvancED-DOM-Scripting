@@ -1,0 +1,8 @@
+#shift {
+	display: none;
+	margin: 0.5em;
+}
+#no-shift {
+	visibility: hidden;
+	margin: 0.5em;
+}

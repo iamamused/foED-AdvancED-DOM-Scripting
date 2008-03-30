@@ -1,0 +1,13 @@
+#region1 {
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+}
+#region2 {
+	width: 30px;
+	height: 30px;
+	border: 1px dotted black;
+	position: relative;
+	top: -10px;
+	left:20px;
+}

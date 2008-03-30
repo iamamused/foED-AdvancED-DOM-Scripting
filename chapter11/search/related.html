@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Hello World - Google AJAX Search API Sample</title>
+ 
+    <script src="http://www.google.com/uds/api?file=uds.js&amp;v=1.0&amp;key=ABQIAAAAFOOBBfcVGVmeJR5FXDm_1BR2mdOh-K__WeD915i10Jagt9QYmBRA7MOsv8cdXJDNdSN1EozosIssBA" type="text/javascript"></script>
+    <script language="Javascript" type="text/javascript">
+    //<![CDATA[
+
+    function OnLoad() {
+		
+		GSearch.getBranding(document.getElementById("branding"));
+		
+		
+		var siteSearch = new GwebSearch();
+		siteSearch.setUserDefinedLabel("This Site");
+		siteSearch.setSiteRestriction("jeffreysambells.com");
+		
+		var blogSearch = new GblogSearch();
+		blogSearch.setUserDefinedLabel("blogosphere");
+
+		searchOptions = new GsearcherOptions();
+		searchOptions.setExpandMode(GSearchControl.EXPAND_MODE_OPEN);
+		searchOptions.setRoot(document.getElementById("search-related"));
+
+		searchControl = new GSearchControl();
+		searchControl.addSearcher(siteSearch,searchOptions);
+
+		var options = new GdrawOptions();
+		options.setDrawMode(GSearchControl.DRAW_MODE_TABBED);
+		searchControl.draw(document.getElementById("search-controls"), options);
+
+		searchControl.setResultSetSize(GSearch.SMALL_RESULTSET)
+		searchControl.execute(document.getElementById('keywords').innerHTML);
+		
+    }
+    GSearch.setOnLoadCallback(OnLoad);
+
+    //]]>
+    </script>
+    <style type="text/css">
+    	#search-controls {
+			display:none;
+		}
+		#post {
+			width:75%;
+			margin-right:10px;
+			float:left;
+		}
+		#related {
+			width:200px;
+			float:right;
+			
+		}
+
+		#search-related table,
+		#search-related .gs-snippet,
+		#search-related .gs-visibleUrl,
+		#search-related .gs-watermark
+		{
+			display:none;
+		}
+		
+		#search-related .gs-result {
+			border:1px solid gray;
+			margin:1em;
+			padding:0.5em;
+		}
+		
+    </style>
+  </head>
+  <body>
+  	<div id="post">
+  		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cras leo. Vestibulum fermentum nisl vel lectus. Nam at quam. Nulla vulputate lacus eu enim. Sed a sapien at arcu tristique tempus. In sit amet lectus. In viverra magna. Suspendisse sem. Duis iaculis, magna vel nonummy aliquam, turpis velit vulputate nisi, viverra gravida lectus lorem aliquam est. Sed mollis gravida leo. Ut semper, ligula vel placerat dapibus, urna neque eleifend ante, ut mattis odio risus eget arcu. Cras dapibus purus id sapien. Pellentesque fermentum metus vitae eros. Cras accumsan. Morbi sed justo vitae tellus faucibus rhoncus. Nunc luctus. Morbi pulvinar fringilla felis.</p>
+		<p>Fusce lobortis, est quis ultrices ornare, eros elit blandit urna, at nonummy felis mauris et purus. Morbi elit urna, congue vitae, dapibus quis, tempor commodo, nisi. Duis dapibus tellus a quam. Praesent mollis iaculis dolor. Donec ullamcorper interdum massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Vestibulum ultricies. Fusce eget odio. Cras eu lectus. Curabitur tristique augue id nisl. Suspendisse non nunc. In hac habitasse platea dictumst. Etiam diam est, ultricies eu, accumsan id, sollicitudin sit amet, pede.</p>
+		<p id="keywords">Lorem ipsum</p>
+  	</div>
+  	<div id="related">
+  		<h4>Related Links</h4>
+ 	   <div id="search-controls"></div> 
+ 	   <div id="search-related"></div>    
+ 	   <div id="branding"></div>
+    </div>
+  </body>
+</html>

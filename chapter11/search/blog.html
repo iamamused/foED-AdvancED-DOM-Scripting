@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Hello World - Google AJAX Search API Sample</title>
+    <link href="http://www.google.com/uds/css/gsearch.css"
+        type="text/css" rel="stylesheet"/>
+    <script src="http://www.google.com/uds/api?file=uds.js&amp;v=1.0&amp;key=ABQIAAAAFOOBBfcVGVmeJR5FXDm_1BR2mdOh-K__WeD915i10Jagt9QYmBRA7MOsv8cdXJDNdSN1EozosIssBA" type="text/javascript"></script>
+    <script language="Javascript" type="text/javascript">
+    //<![CDATA[
+
+    function OnLoad() {
+      // Create a search control
+      var searchControl = new GSearchControl();
+
+      // Add in a full set of searchers
+    var siteSearch = new GwebSearch();
+		siteSearch.setSiteRestriction("jeffreysambells.com");
+		searchControl.addSearcher(siteSearch);
+	
+      // tell the searcher to draw itself and tell it where to attach
+      searchControl.draw(document.getElementById("searchcontrol"));
+
+      // execute an inital search
+      searchControl.execute("Lipsum");
+    }
+    GSearch.setOnLoadCallback(OnLoad);
+
+    //]]>
+    </script>
+  </head>
+  <body>
+    <div id="searchcontrol">Loading</div>
+  </body>
+</html>

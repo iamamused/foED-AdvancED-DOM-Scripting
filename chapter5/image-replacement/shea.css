@@ -1,0 +1,9 @@
+/* Use relative positioning for the parent
+so children can use absolute */
+ #advancedHeader {
+	border: 0; padding: 0; /* remove styleing from other style sheets */
+
+    height:60px;    position:relative;}
+
+/* Hide the text using an opaque background image
+on the absolute positioned span */#advancedHeader span {    background: transparent url(http://advancedDOMScripting.com/images/advancED-replace.png) no-repeat;    display:block;    width:100%;    height:100%;    position:absolute;}

@@ -1,0 +1,56 @@
+ul{ list-style: none; }
+li { width: 400px; }
+form {
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	border-bottom: 2px solid gray;
+}
+form div {
+	clear: both;
+}
+
+img {
+	margin: 0;
+	border: 1px solid gray;
+	padding: 4px;
+	width: 23%;
+	float: left;
+	clear: none;
+}
+
+fieldset {
+	float: right;
+	width: 60%;
+	margin-bottom: 1em;
+	border: 1px dotted gray;
+}
+
+legend {
+	font-size: 0.95em;	
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+.buttons {
+	text-align: center;
+}
+
+form.ADSImageEditorModified {
+	margin: 10px;
+	padding: 0;
+	border: 0;
+}
+form.ADSImageEditorModified * {
+	position: absolute;
+	left: -2000px;
+}
+
+form.ADSImageEditorModified img {
+	position: inherit;
+	left: auto;
+}
+
+

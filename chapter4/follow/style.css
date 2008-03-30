@@ -1,0 +1,10 @@
+body {
+	font: 62.5% "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+#follow {
+	display: inline;
+	background: #000;
+	color:white;
+	padding:1em;
+	margin:0 auto;
+}

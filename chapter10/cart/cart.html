@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Scriptaculous Shopping Cart Example</title>
+    <link rel="stylesheet" href="../../shared/source.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../chapter.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="cart.css" type="text/css" media="screen" />
+
+    <script src="http://jeffreysambells.com/openprojects/JavaScript/JSLog.js" type="text/javascript"></script>
+    <script src="../../ADS-final-verbose.js" type="text/javascript"></script>   
+    <script src="../../libraries/prototype.js" type="text/javascript"></script>
+    <script src="../../libraries/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+    <script type="text/javascript" src="interactive.js"></script>
+</head>
+<body>
+    <h1>A Simple Shopping Cart</h1>
+
+    <div id="content">
+        <h2>Buy Some Books!</h2>
+        <div id="product-wrapper">
+        	<ul id="products">
+				<li class="product-item" id="pid-1">
+					<img src="books/1590593812.jpg" alt="Web Standards Solutions: The Markup and Style Handbook"/>
+					<a href="server.json?id=pid-1" title="Add to cart">Add</a>
+				</li>
+				<li class="product-item" id="pid-2">
+					<img src="books/1590595335.jpg" alt="DOM Scripting: Web Design with JavaScript and the Document Object Model"/>
+					<a href="server.json?id=pid-1" title="Add to cart">Add</a>
+				</li>
+				<li class="product-item" id="pid-3">
+					<img src="books/1590596145.jpg" alt="CSS Mastery: Advanced Web Standards Solutions"/>
+					<a href="server.json?id=pid-1" title="Add to cart">Add</a>
+				</li>
+				<li class="product-item" id="pid-4">
+					<img src="books/1590596382.jpg" alt="Web Accessibility: Web Standards and Regulatory Compliance"/>
+					<a href="server.json?id=pid-1" title="Add to cart">Add</a>
+				</li>
+				<li class="product-item" id="pid-5">
+					<img src="books/1590597656.jpg" alt="HTML Mastery: Semantics, Standards, and Styling"/>
+					<a href="server.json?id=pid-1" title="Add to cart">Add</a>
+				</li>
+				<li class="product-item" id="pid-5">
+					<img src="books/1590598032.jpg" alt="Web Standards Creativity: Innovations in Web Design with XHTML, CSS, and DOM Scripting"/>
+					<a href="server.json?id=pid-1" title="Add to cart">Add</a>
+				</li>
+				<li class="product-item" id="pid-5">
+					<img src="books/1590594304.jpg" alt="Web Designer's Reference"/>
+					<a href="server.json?id=pid-1" title="Add to cart">Add</a>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>        
+        <h3>In Your Cart...</h3>
+        <p id="message">&nbsp;</p>
+        <div id="cart-wrapper">
+            <ul id="cart">
+				<li class="cart-item">
+					<img src="books/1590598032.jpg" alt="Web Standards Creativity: Innovations in Web Design with XHTML, CSS, and DOM Scripting"/>
+					<a href="server.json?id=pid-5" title="Remove from cart">Remove</a>
+				</li>
+				<li class="cart-item">
+					<img src="books/1590596145.jpg" alt="CSS Mastery: Advanced Web Standards Solutions"/>
+					<a href="server.json?id=pid-3" title="Remove from cart">Remove</a>
+				</li>
+			</ul>       
+			<div class="clear"></div>
+		</div>
+    </div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

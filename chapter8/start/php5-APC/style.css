@@ -1,0 +1,121 @@
+/* @override http://ice.wecreate.com/source/chapter7/uploader/uploader.css */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 62.5% "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: center;
+}
+h1 {
+	padding: 0.25em;
+	margin: 0;
+	margin-bottom: 1em;
+	background: gray;
+	color: white;
+	text-align: left;
+}
+h2 {
+	margin-bottom: 0.5em;
+}
+a {
+	text-decoration: none;
+}
+
+label {
+}
+
+fieldset {
+	border: 2px solid #ffd800;
+	padding: 1em;
+}
+legend {
+	padding: 0.5em;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+fieldset p {
+	margin: 1em;	
+}
+fieldset div {
+	margin: 2em;	
+}
+
+div input {
+	margin-left: 1em;
+}
+
+#submitUpload {
+	margin: 1em;
+}
+
+ul {
+	list-style: none;
+}
+ul li {
+	font-size: 1em;
+	padding: 0.25em;
+	margin: 0.25em;
+	border-bottom: 1px dotted gray;
+}
+
+#content {
+	width :400px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+ul#fileList {
+	height: 27em;
+	overflow: scroll;
+	border: 1px solid gray;
+}
+
+#browserPane {
+	margin: 2em 0;
+}
+
+/* 
+Progress bar specific classes that are defiend
+by the addProgressBar() method.
+*/
+input.error {
+	background-color: red;
+	color: white;
+}
+
+.progressContainer {
+	margin-top: 1em;
+	padding: 0.25em;
+}
+
+.progressBackground {
+	border: 1px solid gray;
+	background: #efefef;
+}
+
+.progressBar {
+	background: green;
+	height: 1em;
+}
+
+.progressMessage {
+	font-weight: normal;
+	color: gray;
+}
+.progressMessage.error {
+	font-weight: bold;
+	color: red;
+}
+.progressMessage.complete {
+	color: green;
+}
+.progressMessage.uploading {
+	color: purple;
+}
+.progressMessage.waiting {
+	font-style: italic;
+	color: gray;
+}

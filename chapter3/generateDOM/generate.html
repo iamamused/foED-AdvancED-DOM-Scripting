@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>DOM Generation</title>
+    <title>AdvancED DOM Scripting Sample Document</title>
+    <!-- inclue some CSS style sheet to make everything look a little nicer -->
+    <link rel="stylesheet" type="text/css" href="../../shared/source.css" />
+    <link rel="stylesheet" type="text/css" href="../chapter.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Your ADS library with the common JavaScript objects -->
+    <script type="text/javascript" src="../../ADS-final-verbose.js"></script>
+    <!-- Log object from Chapter 2 -->
+    <script type="text/javascript" src="../../chapter2/myLogger-final/myLogger.js"></script>
+    <!-- The DOM generation file -->
+    <script type="text/javascript" src="generateDOM.js"></script>
+    <!-- The load script -->
+    <script type="text/javascript" src="load.js"></script>
+</head>
+<body>
+<h1>DOM Generation</h1>
+<div id="content">
+<form id="generator" action="">
+    <fieldset>
+        <h2>Source</h2>
+        <label for="source">Enter an HTML document fragment</label>
+        <textarea id="source" cols="30" rows="15">
+&lt;li id="$commentId" class="$commentClass" style="background-color:white"&gt;
+    &lt;a href="$countHref" class="counter" title="$countTitle" onclick="window.open(this.href); return false;"&gt;$countContent&lt;/a&gt;
+    &lt;span class="commentauthor"&gt;&lt;a href="$authorHref" rel="external nofollow"&gt;$authorContent&lt;/a&gt;&lt;/span&gt;
+    &lt;small class="comment-meta"&gt;
+        &lt;a href="$metaHref" title="$metaTitle"&gt;$metaContent&lt;/a&gt;
+    &lt;/small&gt;
+    &lt;div class="comment-content"&gt;
+        $commentContent
+    &lt;/div&gt;
+&lt;/li&gt;
+        </textarea>
+        <input id="generate" type="button" value="&#8595; generate &#8595;" />
+        <h2>DOM Code</h2>
+        <label for="result">and voila! DOM goodness:</label>
+        <textarea id="result" cols="30" rows="15"></textarea>
+    </fieldset>
+</form>
+</div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

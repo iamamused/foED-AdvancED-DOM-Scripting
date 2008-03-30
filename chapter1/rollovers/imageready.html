@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>ImageReady Example</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+    <script type="text/javascript">
+    <!--
+    
+    function newImage(arg) {
+        if (document.images) {
+            rslt = new Image();
+            rslt.src = arg;
+            return rslt;
+        }
+    }
+    
+    function changeImages() {
+        if (document.images && (preloadFlag == true)) {
+            for (var i=0; i<changeImages.arguments.length; i+=2) {
+                document[changeImages.arguments[i]].src = 
+                    changeImages.arguments[i+1];
+            }
+        }
+    }
+    
+    var preloadFlag = false;
+    function preloadImages() {
+        if (document.images) {
+            button1_over = newImage("images/button1-over.png");
+            button1_down = newImage("images/button1-down.png");
+            button2_over = newImage("images/button2-over.png");
+            button2_down = newImage("images/button2-down.png");
+            preloadFlag = true;
+        }
+    }
+    
+    // -->
+    </script>
+
+</head>
+<body onload="preloadImages();">
+<h1>Multi State Anchor Example</h1>
+    <div>
+    <a href="http://advanceddomscripting.com"
+        onmouseover="changeImages('button1', 'images/button1-over.png'); return true;"
+        onmouseout="changeImages('button1', 'images/button1.png'); return true;"
+        onmousedown="changeImages('button1', 'images/button1-down.png'); return true;"
+        onmouseup="changeImages('button1', 'images/button1-over.png'); return true;">
+        <img name="button1" src="images/button1.png" width="113" height="67" alt="button1"></a>
+    <a href="http://advanceddomscripting.com"
+        onmouseover="changeImages('button2', 'images/button2-over.png'); return true;"
+        onmouseout="changeImages('button2', 'images/button2.png'); return true;"
+        onmousedown="changeImages('button2', 'images/button2-down.png'); return true;"
+        onmouseup="changeImages('button2', 'images/button2-over.png'); return true;">
+        <img name="button2" src="images/button2.png" width="113" height="67" alt="button2"></a>
+    </div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

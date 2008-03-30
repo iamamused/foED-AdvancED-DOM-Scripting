@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font: 62.5% "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+code {
+	font: 1em "Courier New", Courier, mono;
+}
+
+h1 {
+	padding: 0.25em;
+	margin: 0;
+	background: gray;
+	color: white;
+}
+
+ul {
+	margin: 2em;
+}
+li {
+	font-weight: bold;
+	margin: 0.5em;
+	margin-top: 1em;
+}
+ul#nav {
+	background: #efefef;
+	padding: 0.5em;
+	margin:0 0 2em 0;
+}
+ul#nav li {
+	display: inline;
+}

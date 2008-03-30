@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Inline JavaScript</title>
+    <link rel="stylesheet" href="popup.css" type="text/css" media="screen" />
+    <script src="../../ADS-final-verbose.js" type="text/javascript"></script>
+    <script src="popupLoadEvent.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    	function popup(url) {
+    		window.open(url);
+    		//do not return anything!
+    	}
+    </script>
+</head>
+<body>
+    <h1>Inline JavaScript <code>window.open</code> Examples</h1>
+    <dl>
+    	<dt><a href="http://advanceddomscripting.com" target="_blank">AdvancED DOM Scripting</a> </dt>
+    	<dd>The target method will not validate in strict DOCTYPE.</dd>
+    	<dt><a href="javascript:window.open('http://advanceddomscripting.com');">AdvancED DOM Scripting</a></dt>
+    	<dd>The popup works but original window sow the return value of the <code>window.open</code> method. It also requires JavaScript.</dd>
+    	<dt><a href="javascript:popup('http://advanceddomscripting.com');">AdvancED DOM Scripting</a></dt>
+    	<dd>The popup works and the original window remains but it's still using <code>javascript:</code> prefix</dd>
+    	<dt><a href="http://advanceddomscripting.com" onclick="this.href='javascript:popup(\'http://advanceddomscripting.com\');'">AdvancED DOM Scripting</a></dt>
+	 	<dd>Using <code>onclick</code> event attribute and JavaScript not required but onclick method is messy.</dd>
+	 	<dt><a href="http://advanceddomscripting.com" onclick="popup(this.href); return false;">AdvancED DOM Scripting</a></dt>
+	 	<dd>Using <code>this.href</code> from within the <code>onclick</code> event attribute works as expected, but it still requires inline JavaScript.</dd>
+       	<dt><a href="http://advanceddomscripting.com" class="popup">AdvancED DOM Scripting</a></dt>
+       	<dd>The ultimate correct solution using <code>class="popup"</code> and a load event.</dd>
+	</dl>    
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

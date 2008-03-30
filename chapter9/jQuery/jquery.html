@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>jQuery Examples</title>
+	<link rel="stylesheet" href="../style.css" type="text/css" media="screen" />
+	<script src="http://jeffreysambells.com/openprojects/JavaScript/JSLog.js" type="text/javascript"></script>
+	<script src="../../ADS-final-verbose.js" type="text/javascript"></script>
+	<script src="../../libraries/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="jquery-examples.js"></script>
+</head>
+<body>
+	<h1>jQuery Examples</h1>
+	<ul id="nav">
+		<li><a href="../DOMAssistant/domassistant.html">DOMAssistant</a></li>
+		<li><a href="../jQuery/jquery.html">jQuery</a></li>
+		<li><a href="../MochiKit/mochikit.html">MochiKit</a></li>
+		<li><a href="../Prototype/prototype.html">Prototype</a></li>
+		<li><a href="../YUI/yui.html">YAHOO YUI</a></li>
+	</ul>
+	<p>See the <a href="jquery-examples.js" id="source">JavaScript Source</a></p>
+
+	<div id="content">
+	<h2>AdvandED DOM Scripting Library Test Page</h2>
+    <p>An example list to demonstrate DOM access:</p>
+    <ul id="browserList">
+        <li id="firefoxListEntry">
+            <a href="http://www.getfirefox.com/"
+            	title="Get Firefox"
+            	id="firefox"
+            	class="browser">Firefox 2.0</a>
+        </li>
+        <li>
+            <a href="http://www.microsoft.com/windows/ie/downloads/"
+            	title="Get Microsoft Internet Explorer"
+            	id="msie"
+            	class="browser">Microsoft Internet Explorer 7</a>
+        </li>
+        <li>
+            <a href="http://www.microsoft.com/windows/ie/downloads/"
+            	title="Get Safari"
+            	id="safari"
+            	class="browser">Safari 2</a>
+        </li>
+        <li>
+            <a href="http://www.opera.com/download/"
+            	title="Get Opera"
+            	id="opera"
+            	class="browser">Opera 9</a>
+        </li>
+    </ul>
+
+	<h3>Move all items from list 1 to list 2:</h3>
+	<h4>List 1</h4>
+	<ul id="list1">
+		<li>item1 in list 1</li>
+		<li>item2 in list 1</li>
+		<li>item3 in list 1</li>
+	</ul>
+	<h4>List 2</h4>
+	<ul id="list2">
+		<li>item1 in list 2</li>
+		<li>item2 in list 2</li>
+		<li>item3 in list 2</li>
+	</ul>
+
+	<h4>Ajax</h4>
+	<p>The content of this box will be updated with the Ajax result.</p>
+    <div id="ajax-updater-target" class="ajax-element">Ajax updater Target</div>
+
+	<h4>Auto Save</h4>
+	<p>This form will auto-save every few seconds as indicated by the message that appears below the "save" button.</p>
+	<p>This idea will be re-visited in Chapter 10.</p>
+	<div id="autosave-example">
+		<form name="autosave-form" id="autosave-form">
+		<div id="autosave">
+			<div>
+				<label for="title">Title: </label>
+				<input type="text" name="title" id="title"/>
+			</div>
+			<div>
+				<label for="story">Story: </label>
+				<textarea name="story" id="story"></textarea>
+			</div>
+			<div><input type="submit" value="save it"></div>
+			<div id="autosave-status"></div>
+		</div>
+		</form>
+	</div>
+
+	<h4>Chapter 1 <a href="../../chapter1/rollovers/unobtrusive.html">Rollover Redux</a> redone with jQuery</h4>
+	<a href="http://advanceddomscripting.com" class="multiStateAnchor">
+    	<img src="../images/button1.png" width="113" height="67" alt="Button 1" />
+    </a>
+	<a href="http://advanceddomscripting.com" class="multiStateAnchor">
+    	<img src="../images/button2.png" width="113" height="67" alt="Button 2" />
+   	</a>
+	<hr>
+	<a href="http://advanceddomscripting.com"
+		title="Advanced DOM Scripting"
+		id="AdvancED"
+		class="popup"><img src="../AdvancED-DOM-Scripting-badge.png"></a>
+	</div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Form Events: An Address Form</title>
+    <!-- inclue some CSS style sheet to make everything look a little nicer -->
+    <link rel="stylesheet" type="text/css" href="../../shared/source.css" />
+    <link rel="stylesheet" type="text/css" href="../chapter.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- ADS Library (full version from source linked here) -->
+    <script type="text/javascript" src="../../ADS-final-verbose.js"></script>
+    <!-- Log object from Chapter 2 (full version from source linked here) -->
+    <script type="text/javascript" 
+        src="../../chapter2/myLogger-final/myLogger.js"></script>
+    <!-- A quick testing file -->
+    <script type="text/javascript" src="address.js"></script></head>
+</head>
+<body>
+<h1>Form Events: An Address Form</h1>
+<ul id="nav">
+	<li><a href="../image-load/image-load.html">Image-Load</a></li>
+	<li><a href="../click/click.html">Click</a></li>
+	<li><a href="../move/move.html">Move</a></li>
+	<li><a href="../address/address.html">Address Form</a></li>
+	<li><a href="../follow/follow.html">Follow</a></li>
+	<li><a href="../flow/flow.html">Flow</a></li>
+	<li><a href="../keys/keys.html">Key Press</a></li>
+	<li><a href="../load/load.html">addLoadEvent</a></li>
+</ul>
+<div id="content">
+    <h2>Enter a Canadian Address</h2>
+    <form action="" method="post" id="canadianAddress">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"/>
+        </div>
+        <div>
+            <label for="postalCode">Postal Code (required)</label>
+            <input type="text" id="postalCode" name="postalCode" class="required"/>
+            <p>In the format A#A #A#</p>
+        </div>
+        <div>
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street"/>
+        </div>
+        <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city"/>
+        </div>
+        <div>
+            <label for="province">Province</label>
+            <input type="text" id="province" name="province"/>
+        </div>  
+        <div class="buttons">
+            <input type="submit" value="submit" />
+        </div>
+    </form>
+</div>
+
+<div id="where-from">
+	From <a href="http://advanceddomscripting.com" title="AdvancED DOM Scripting">AdvancED DOM Scripting</a> 
+	| <a href="http://www.amazon.com/exec/obidos/ASIN/1590598563/jeffreysamb05-20" title="Buy it on Amazon">Paperback</a>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+body {
+	font: 62.5%/1.2em sans-serif;
+	color: #1a3800;
+	text-align:center;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+#content {
+	width:400px;
+	margin: 0 auto;
+	padding:2em;
+	text-align:left;
+}

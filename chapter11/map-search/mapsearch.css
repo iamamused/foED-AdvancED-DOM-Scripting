@@ -1,0 +1,30 @@
+#mapsearch {
+	width : 500px;
+	margin: 10px;
+	
+}
+.gsmsc-mapDiv {
+	height : 275px;
+}
+
+.gsmsc-idleMapDiv {
+	height : 275px;
+}
+
+td.gsc-input {
+	width: 320px;
+}
+input.gsc-input {
+	width: 290px;
+}
+
+td.gsc-search-button {
+	width: 100px;
+}
+
+
+
+
+div.gsc-branding-text {
+	margin: 0;
+}

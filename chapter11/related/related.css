@@ -1,0 +1,66 @@
+#search-controls {
+	display:none;
+}
+#related {
+	background: #fefde0;	
+	border: 1px solid #e0e0e0;
+	padding: 0.5em;
+}
+#related h4 {
+	padding-left: 20px;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+#search-related a {
+	padding-left: 20px;
+}
+
+#search-related a:link {
+	text-decoration: none;
+	color: #6b6b5f;
+}
+#search-related a:visited {
+}
+#search-related a:hover {
+	text-decoration: underline;
+}
+#search-related a:active {
+	color: red;
+}
+#search-related table,
+#search-related .gs-snippet,
+#search-related .gs-visibleUrl,
+#search-related .gs-watermark
+{
+	display:none;
+}
+#search-related .gs-result {
+	margin: 0.7em 0;
+}
+#search-related a.gsc-trailing-more-results {
+	color: #d1d2ba;
+}
+#search-related a.gsc-trailing-more-results:hover {
+	color: #6b6b5f;
+}
+.gsc-branding {
+	text-align: right;
+	margin-top: 4px;
+	width: 120px;
+	padding-left: 8px;
+
+}
+.gsc-branding table {
+	margin-left: auto;
+	width: 100%;
+}
+.gsc-branding-text {
+	display: block;
+	font-size: 1em;
+	color: #676767;
+	padding-right: 0.3em;
+	margin-left: auto;
+	text-align: right;
+	width: 100%;
+}

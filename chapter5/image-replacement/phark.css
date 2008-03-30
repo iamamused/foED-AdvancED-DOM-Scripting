@@ -1,0 +1,8 @@
+/* Use a background image along with a negative 
+text indent to hide the text */
+#advancedHeader {
+	border: 0; padding: 0; /* remove styleing from other style sheets */
+
+    text-indent: -100em;    overflow:hidden;
+
+    height:60px;    background: transparent url(http://advancedDOMScripting.com/images/advancED-replace.png) no-repeat;}

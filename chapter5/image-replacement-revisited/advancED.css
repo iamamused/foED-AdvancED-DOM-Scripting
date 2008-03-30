@@ -1,0 +1,3 @@
+/* The styling for the text if images are disabled */#advancedHeader {    color: #1A5B9D;}/* Sizing the header for the image */#advancedHeader.advancED {
+		border:0; padding: 0;    height:60px;    position:relative;
+    overflow:hidden;}/* Hide the text with the opaque image*/#advancedHeader.advancED span {    background: white url(http://advancedDOMScripting.com/images/advancED-replace.png) no-repeat;    display:block;    width:100%;    height:100%;    position:absolute;}
